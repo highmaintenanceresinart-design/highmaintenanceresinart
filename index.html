@@ -1,40 +1,392 @@
-<!DOCTYPE html>
+<!-- index.html -->
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>High Maintenance Resin Art</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <h1>High Maintenance Resin Art</h1>
-    <p>One-of-one statement pieces</p>
+  <!-- Top utility / announcement -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__msg">Glitter • Crystals • Iridescent finishes • One-of-one statement pieces</p>
+      <div class="topbar__right">
+        <span class="topbar__currency" aria-label="Currency selector">USD ▾</span>
+        <span class="topbar__icons" aria-label="Social links">
+          <a href="#" aria-label="Instagram" class="icon-link">IG</a>
+          <a href="#" aria-label="TikTok" class="icon-link">TT</a>
+          <a href="#" aria-label="Etsy" class="icon-link">ET</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="header__nav header__nav--left" aria-label="Primary">
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#contact">Contact</a>
+        <a class="navlink" href="#faq">FAQ</a>
+      </nav>
+
+      <a class="brand" href="#" aria-label="High Maintenance Resin Art Home">
+        <img class="brand__logo" src="images/logo.png" alt="High Maintenance Resin Art logo" />
+      </a>
+
+      <div class="header__actions" aria-label="Site tools">
+        <button class="iconbtn" type="button" aria-label="Search">🔎</button>
+        <button class="iconbtn" type="button" aria-label="Account">👤</button>
+        <button class="iconbtn" type="button" aria-label="Cart">🛒</button>
+      </div>
+    </div>
+
+    <!-- Secondary nav -->
+    <div class="subnav">
+      <div class="container subnav__inner">
+        <a class="subnav__link" href="#collection">SIGNATURE DROPS</a>
+        <div class="subnav__divider" aria-hidden="true"></div>
+        <a class="subnav__link" href="#shop">SHOP ▾</a>
+        <a class="subnav__link" href="#gallery">GALLERY</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Functional Art. Iridescent. One of a Kind.</h2>
-      <p>
-        Resin-created statement pieces, artified objects, and custom designs —
-        each piece handcrafted, never repeated.
-      </p>
-      <a href="#" class="btn">Shop the Collection</a>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__sparkle" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="hero__kicker">FUNCTIONAL ART • GLAM FINISHES</p>
+        <h1 class="hero__title">RESIN THAT HITS DIFFERENT</h1>
+        <p class="hero__subtitle">
+          One-of-one statement pieces with crystal edges, shimmer depth, and that iridescent “can’t stop staring” glow.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#collection">Explore Drops</a>
+          <a class="btn btn--ghost" href="#custom">Custom Order</a>
+        </div>
+
+        <div class="hero__mini">
+          <div class="mini-card">
+            <div class="mini-card__label">Popular</div>
+            <div class="mini-card__value">Geode Trays + Wall Pieces</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__label">Also</div>
+            <div class="mini-card__value">Artified Items (Toolboxes)</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="about">
-      <h3>About the Artist</h3>
-      <p>
-        High Maintenance Resin Art is built around bold creativity,
-        glittering finishes, crystals, and unapologetic glamour.
-        Every piece is designed to stand out and elevate any space.
-      </p>
+    <!-- Collection grid -->
+    <section id="collection" class="section section--cream">
+      <div class="container">
+        <div class="section__heading">
+          <h2 class="section__title">FEATURED PIECES</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <a href="#" class="product-card__media" aria-label="Iridescent Glitter Geode Tray">
+              <img src="images/tray-1.jpg" alt="Iridescent glitter resin geode tray with crystal clusters" />
+            </a>
+            <div class="product-card__meta">
+              <h3 class="product-card__name">Iridescent Geode Tray</h3>
+              <p class="product-card__price">From $240</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="#" class="product-card__media" aria-label="Purple Blue Statement Tray">
+              <img src="images/tray-2.jpg" alt="Purple and blue resin tray with crystal accents" />
+            </a>
+            <div class="product-card__meta">
+              <h3 class="product-card__name">Galaxy Pour Tray</h3>
+              <p class="product-card__price">From $260</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="#" class="product-card__media" aria-label="Gold Framed Geode Display">
+              <img src="images/geode-frame.jpg" alt="Gold framed resin geode display with glitter and crystals" />
+            </a>
+            <div class="product-card__meta">
+              <h3 class="product-card__name">Framed Geode Display</h3>
+              <p class="product-card__price">From $320</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="#" class="product-card__media" aria-label="Artified Cobalt Toolbox">
+              <img src="images/toolbox.jpg" alt="Cobalt toolbox customized as functional art" />
+            </a>
+            <div class="product-card__meta">
+              <h3 class="product-card__name">Artified Cobalt Toolbox</h3>
+              <p class="product-card__price">From $450</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <!-- Feature blocks -->
+    <section class="section section--cream" id="custom">
+      <div class="container feature">
+        <div class="feature__text">
+          <p class="eyebrow">ELEVATE YOUR SPACE</p>
+          <h2 class="feature__title">BESPOKE RESIN STATEMENT PIECES</h2>
+          <p class="feature__body">
+            Every piece is layered for depth, shimmer, and dimension. Build yours around a color vibe,
+            crystal edge profile, and finish level (subtle glow → full glitter bomb).
+          </p>
+          <ul class="feature__list">
+            <li>Crystal edge options (clean, heavy cluster, or asymmetric)</li>
+            <li>Iridescent + holographic glitter layers (high sparkle)</li>
+            <li>Mount options: wall-mounted or tabletop on black iron stand/risers</li>
+          </ul>
+          <a class="btn btn--primary" href="#contact">Start a Custom</a>
+          <p class="fineprint">Stands/frames not included unless listed. Add-ons available.</p>
+        </div>
+
+        <div class="feature__media glass-frame">
+          <img src="images/geode-1.jpg" alt="Resin geode piece with iridescent glitter and crystals" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="container feature feature--reverse">
+        <div class="feature__text">
+          <p class="eyebrow">FUNCTIONAL • UNREAL LOOK</p>
+          <h2 class="feature__title">ARTIFIED OBJECTS</h2>
+          <p class="feature__body">
+            We turn real items into luxury art pieces — like cobalt toolboxes upgraded with resin, shimmer,
+            and crystal details. It’s functional, but it still looks like it belongs in a gallery.
+          </p>
+          <a class="textlink" href="#shop">Shop Artified Items →</a>
+        </div>
+
+        <div class="feature__media glass-frame">
+          <img src="images/geode-2.jpg" alt="Resin statement piece with sparkle and crystal accents" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote band -->
+    <section class="quote-band">
+      <div class="container quote-band__inner">
+        <h2 class="quote-band__title">GLITTER. GLOW. POWER PIECES.</h2>
+        <p class="quote-band__subtitle">If it doesn’t catch the light, it’s not finished.</p>
+      </div>
+    </section>
+
+    <!-- About (Kat) -->
+    <section class="section section--cream" id="about">
+      <div class="container split">
+        <div class="split__media portrait-frame">
+          <img src="images/kat.png" alt="Portrait of the maker (Kat) in an iridescent style" />
+        </div>
+        <div class="split__text">
+          <p class="eyebrow">MEET THE MAKER</p>
+          <h2 class="split__title">KAT’S IRIDESCENT ERA</h2>
+          <p class="split__body">
+            High Maintenance Resin Art is built around bold detail and unapologetic shine.
+            Kat creates one-of-one pours designed to look alive under light — crystals, shimmer layers,
+            and finishes that feel premium in-hand.
+          </p>
+          <div class="pill-row">
+            <span class="pill">One-of-One</span>
+            <span class="pill">Crystal Edge</span>
+            <span class="pill">Iridescent</span>
+            <span class="pill">Glitter Bomb</span>
+          </div>
+          <a class="btn btn--primary" href="#gallery">See the Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section section--cream" id="gallery">
+      <div class="container">
+        <div class="section__heading">
+          <h2 class="section__title">GALLERY</h2>
+        </div>
+
+        <div class="gallery">
+          <a class="gallery__item" href="#" aria-label="Gallery item 1">
+            <img src="images/tray-1.jpg" alt="Gallery photo: iridescent glitter geode tray" />
+          </a>
+          <a class="gallery__item" href="#" aria-label="Gallery item 2">
+            <img src="images/tray-2.jpg" alt="Gallery photo: purple blue statement tray" />
+          </a>
+          <a class="gallery__item" href="#" aria-label="Gallery item 3">
+            <img src="images/geode-frame.jpg" alt="Gallery photo: framed geode display" />
+          </a>
+          <a class="gallery__item" href="#" aria-label="Gallery item 4">
+            <img src="images/toolbox.jpg" alt="Gallery photo: artified cobalt toolbox" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--blush" id="testimonials">
+      <div class="container">
+        <div class="section__heading">
+          <h2 class="section__title section__title--center">TESTIMONIALS</h2>
+        </div>
+
+        <div class="testimonials">
+          <article class="tcard">
+            <div class="tcard__stars" aria-label="5 stars">★★★★★</div>
+            <p class="tcard__text">
+              “The sparkle is insane in person. The crystal edge looks like a real geode.”
+            </p>
+            <p class="tcard__meta">— Verified Buyer</p>
+          </article>
+
+          <article class="tcard tcard--lift">
+            <div class="tcard__stars" aria-label="5 stars">★★★★★</div>
+            <p class="tcard__text">
+              “Custom order was dead-on. The colors shift in the light — unreal.”
+            </p>
+            <p class="tcard__meta">— Custom Client</p>
+          </article>
+
+          <article class="tcard">
+            <div class="tcard__stars" aria-label="5 stars">★★★★★</div>
+            <p class="tcard__text">
+              “Luxury finish and it arrived perfect. Looks expensive because it IS.”
+            </p>
+            <p class="tcard__meta">— Repeat Customer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--cream" id="faq">
+      <div class="container faq">
+        <div class="faq__head">
+          <h2 class="faq__title">FAQ</h2>
+          <p class="faq__sub">Fast answers for buyers.</p>
+        </div>
+
+        <div class="faq__grid">
+          <details class="faq__item">
+            <summary>Do you take custom orders?</summary>
+            <p>Yes. Tell us your size, colors, crystals, and whether it’s wall-mounted or tabletop.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Are stands/frames included?</summary>
+            <p>No, unless the listing says so. Black iron stands/risers can be added.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>What’s the typical turnaround time?</summary>
+            <p>Usually 2–4 weeks depending on complexity and cure time.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>How do I care for resin?</summary>
+            <p>Avoid heat and harsh cleaners. Wipe with a soft cloth.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--cream" id="contact">
+      <div class="container contact">
+        <div class="contact__text">
+          <p class="eyebrow">LET’S BUILD YOUR PIECE</p>
+          <h2 class="contact__title">Contact</h2>
+          <p class="contact__body">
+            Send size + color vibe + crystals + display style. If you have inspiration photos, mention it.
+          </p>
+          <div class="contact__links">
+            <a class="textlink" href="#">Instagram →</a>
+            <a class="textlink" href="#">TikTok →</a>
+            <a class="textlink" href="#">Etsy →</a>
+          </div>
+        </div>
+
+        <form class="contact__form" action="#" method="post">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+          </label>
+
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" placeholder="you@email.com" required />
+          </label>
+
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Size, colors, crystals, wall/tabletop, timeframe..." required></textarea>
+          </label>
+
+          <button class="btn btn--primary btn--block" type="submit">Send Request</button>
+          <p class="formnote">Template form — connect to email/back-end later.</p>
+        </form>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 High Maintenance Resin Art</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__head">High Maintenance Resin Art</h3>
+        <p class="footer__muted">One-of-one statement pieces. Glitter. Crystals. Iridescent luxury.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__head">Quick Links</h3>
+        <a class="footer__link" href="#collection">Featured</a>
+        <a class="footer__link" href="#custom">Custom</a>
+        <a class="footer__link" href="#gallery">Gallery</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__head">Info</h3>
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#faq">FAQ</a>
+        <a class="footer__link" href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__head">Newsletter</h3>
+        <p class="footer__muted">Drops + one-offs. No spam.</p>
+        <form class="newsletter" action="#" method="post">
+          <input class="newsletter__input" type="email" placeholder="Email address" aria-label="Email address" />
+          <button class="btn btn--primary" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <small>© <span id="year"></span> High Maintenance Resin Art. All rights reserved.</small>
+        <small class="footer__muted">United States • USD</small>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </footer>
 
 </body>
