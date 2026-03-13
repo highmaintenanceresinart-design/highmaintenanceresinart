@@ -1,259 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Images • High Maintenance Resin Art</title>
-  <meta name="description" content="Gallery of high-end iridescent resin artwork featuring real crystals and geode-inspired relief pieces by High Maintenance Resin Art."/>
-  <link rel="stylesheet" href="style.css"/>
-
-  <style>
-    .filters { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
-    .filter-btn{
-      border:1px solid rgba(255,215,190,.18);
-      background:rgba(12,11,20,.55);
-      color:rgba(246,244,255,.85);
-      padding:10px 14px;
-      border-radius:999px;
-      font-weight:900;
-      cursor:pointer;
-    }
-    .filter-btn.active{
-      border:none;
-      color:#120b12;
-      background:linear-gradient(135deg, var(--gold), var(--pink), var(--aqua));
-    }
-    .hidden{ display:none !important; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High Maintenance Resin Art</title>
+  <meta name="description" content="One-of-one resin statement pieces, geode-inspired art, glam decor, and custom creations by High Maintenance Resin Art." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="High Maintenance Resin Art"/>
-      <span>High Maintenance Resin Art</span>
-    </a>
-    <div class="menu">
-      <a href="products.html">Products</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="images.html">Images</a>
-      <a href="commission.html">Commission</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</div>
+  <header class="site-header">
+    <h1>High Maintenance Resin Art</h1>
+    <p>One-of-one statement pieces</p>
+  </header>
 
-<div class="container">
-  <div class="breadcrumb"><a href="index.html">Home</a> / Images</div>
-
-  <section class="section">
-    <h2 class="sec-title">Gallery</h2>
-    <div class="panel">
-      <p class="note">
-        A curated selection of one-of-one, geode-inspired resin relief artworks and accessories.
-        All pieces are handcrafted using premium resin and real crystals.
+  <main>
+    <section class="hero">
+      <h2>Luxury Resin Art Made to Stand Out</h2>
+      <p>
+        Handcrafted resin trays, geode-inspired artwork, crystal details, glam décor,
+        and custom artified pieces designed to turn heads.
       </p>
-      <p class="small" style="margin-top:10px;">
-        Some works feature raised crystal clusters protruding up to ~3.5".
-        Display options include wall mounting, black iron stands, or tabletop risers.
+      <a href="https://highmaintenancedesigns.etsy.com" class="btn" target="_blank" rel="noopener noreferrer">
+        Shop on Etsy
+      </a>
+    </section>
+
+    <section class="about">
+      <h3>About the Brand</h3>
+      <p>
+        High Maintenance Resin Art creates bold, iridescent, luxury-inspired resin artwork
+        with glitter, crystals, depth, and one-of-one personality. Every piece is handcrafted
+        and designed to feel high-end, dramatic, and impossible to ignore.
       </p>
+    </section>
 
-      <div class="filters" role="tablist" aria-label="Gallery filters">
-        <button class="filter-btn active" data-filter="all" role="tab">All</button>
-        <button class="filter-btn" data-filter="signature" role="tab">Signature Relief</button>
-        <button class="filter-btn" data-filter="trays" role="tab">Trays</button>
-        <button class="filter-btn" data-filter="ashtrays" role="tab">Ashtrays</button>
-        <button class="filter-btn" data-filter="grinders" role="tab">Grinders</button>
-      </div>
-    </div>
-  </section>
+    <section class="about">
+      <h3>What You’ll Find</h3>
+      <p>
+        Signature geode pieces, trays, ashtrays, grinders, custom resin décor,
+        and glam functional art — including artified toolboxes and statement pieces
+        built around your color and style preferences.
+      </p>
+    </section>
 
-  <section class="section">
-    <div class="grid" id="galleryGrid">
+    <section class="about">
+      <h3>Custom Orders</h3>
+      <p>
+        Looking for a custom piece? We offer personalized colors, crystal placement,
+        finish options, and display styles. The easiest way to shop current work is Etsy,
+        but custom requests can be built around your vision.
+      </p>
+    </section>
+  </main>
 
-      <a class="card item" data-cat="signature" href="pieces/signature-01.html">
-        <img src="images/art1.jpg" alt="Signature Relief — One of One (Large)" loading="lazy" data-lightbox>
-        <div class="overlay">
-          <div class="overlay-title">Signature Relief — One of One</div>
-          <div class="overlay-meta">Large footprint • gold accents • raised clusters up to ~3.5"</div>
-          <div class="overlay-tag">Signature</div>
-        </div>
-      </a>
-
-      <a class="card item" data-cat="signature" href="pieces/signature-02.html">
-        <img src="images/art2.jpg" alt="Signature Relief — One of One (Medium)" loading="lazy" data-lightbox>
-        <div class="overlay">
-          <div class="overlay-title">Signature Relief — One of One</div>
-          <div class="overlay-meta">Heavy crystal edge • iridescent depth • display options</div>
-          <div class="overlay-tag">Signature</div>
-        </div>
-      </a>
-
-      <a class="card item" data-cat="signature" href="pieces/signature-03.html">
-        <img src="images/art3.jpg" alt="Signature Relief — Showpiece (XL)" loading="lazy" data-lightbox>
-        <div class="overlay">
-          <div class="overlay-title">Signature Relief — Showpiece</div>
-          <div class="overlay-meta">Museum-level density • custom mount/stand/riser</div>
-          <div class="overlay-tag">XL</div>
-        </div>
-      </a>
-
-      <div class="card item" data-cat="signature">
-        <img src="images/hero-piece.jpg" alt="Signature geode resin slab (relief artwork)" loading="lazy" data-lightbox>
-        <div class="overlay">
-          <div class="overlay-title">Signature Relief</div>
-          <div class="overlay-meta">Real crystals • sculptural relief • luxury finish</div>
-          <div class="overlay-tag">Signature</div>
-        </div>
-      </div>
-
-      <div class="card item" data-cat="trays">
-        <img src="images/tray.jpg" alt="Rolling tray with crystal accents (9x5 or 8x3)" loading="lazy" data-lightbox>
-        <div class="overlay">
-          <div class="overlay-title">Rolling Tray</div>
-          <div class="overlay-meta">9x5 or 8x3 • crystal accents available</div>
-          <div class="overlay-tag">Tray</div>
-        </div>
-      </div>
-
-      <div class="card item" data-cat="ashtrays">
-        <img src="images/art4.jpg" alt="Ashtray example — replace with ashtray photo" loading="lazy" data-lightbox>
-        <div class="overlay">
-          <div class="overlay-title">Ashtray</div>
-          <div class="overlay-meta">4&quot; round • 5&quot; round • 6&quot; leaf</div>
-          <div class="overlay-tag">Ashtray</div>
-        </div>
-      </div>
-
-      <div class="card item" data-cat="grinders">
-        <img src="images/art5.jpg" alt="Grinder example — replace with grinder photo" loading="lazy" data-lightbox>
-        <div class="overlay">
-          <div class="overlay-title">Grinder</div>
-          <div class="overlay-meta">~2.5&quot; • custom finish + accents</div>
-          <div class="overlay-tag">Grinder</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-</div>
-
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <div class="lightbox-inner">
-    <button class="lightbox-close" id="lbClose" aria-label="Close">✕</button>
-    <button class="lightbox-prev" id="lbPrev" aria-label="Previous">‹</button>
-    <button class="lightbox-next" id="lbNext" aria-label="Next">›</button>
-
-    <img class="lightbox-img" id="lbImg" alt="">
-    <div class="lightbox-caption" id="lbCap"></div>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="container">© 2026 High Maintenance Resin Art</div>
-</footer>
-
-<script>
-(() => {
-  // Filters
-  const buttons = Array.from(document.querySelectorAll('.filter-btn'));
-  const items = Array.from(document.querySelectorAll('.item'));
-
-  function setActive(btn){
-    buttons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  }
-  function applyFilter(cat){
-    items.forEach(item => {
-      const match = (cat === 'all') || (item.dataset.cat === cat);
-      item.classList.toggle('hidden', !match);
-    });
-    buildLightboxList();
-  }
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const cat = btn.dataset.filter;
-      setActive(btn);
-      applyFilter(cat);
-    });
-  });
-
-  // Lightbox
-  const grid = document.getElementById('galleryGrid');
-  const lb = document.getElementById('lightbox');
-  const lbImg = document.getElementById('lbImg');
-  const lbCap = document.getElementById('lbCap');
-  const btnClose = document.getElementById('lbClose');
-  const btnPrev = document.getElementById('lbPrev');
-  const btnNext = document.getElementById('lbNext');
-
-  let imgs = [];
-  let index = 0;
-
-  function buildLightboxList(){
-    imgs = Array.from(grid.querySelectorAll('img[data-lightbox]'))
-      .filter(img => !img.closest('.item')?.classList.contains('hidden'));
-  }
-
-  function openAt(i) {
-    if (!imgs.length) return;
-    index = (i + imgs.length) % imgs.length;
-    const img = imgs[index];
-    lbImg.src = img.currentSrc || img.src;
-    lbImg.alt = img.alt || 'Artwork';
-    lbCap.textContent = img.alt || '';
-    lb.classList.add('open');
-    lb.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function close() {
-    lb.classList.remove('open');
-    lb.setAttribute('aria-hidden', 'true');
-    lbImg.src = '';
-    document.body.style.overflow = '';
-  }
-
-  function prev() { openAt(index - 1); }
-  function next() { openAt(index + 1); }
-
-  buildLightboxList();
-
-  grid.addEventListener('click', (e) => {
-    const img = e.target.closest('img[data-lightbox]');
-    if (!img) return;
-    e.preventDefault();
-    buildLightboxList();
-    const i = imgs.indexOf(img);
-    openAt(i >= 0 ? i : 0);
-  });
-
-  btnClose.addEventListener('click', close);
-  btnPrev.addEventListener('click', prev);
-  btnNext.addEventListener('click', next);
-
-  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
-
-  document.addEventListener('keydown', (e) => {
-    if (!lb.classList.contains('open')) return;
-    if (e.key === 'Escape') close();
-    if (e.key === 'ArrowLeft') prev();
-    if (e.key === 'ArrowRight') next();
-  });
-
-  let startX = null;
-  lb.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, {passive:true});
-  lb.addEventListener('touchend', (e) => {
-    if (startX === null) return;
-    const endX = e.changedTouches[0].clientX;
-    const diff = endX - startX;
-    startX = null;
-    if (Math.abs(diff) < 40) return;
-    if (diff > 0) prev(); else next();
-  }, {passive:true});
-})();
-</script>
+  <footer class="site-footer">
+    <p>© 2026 High Maintenance Resin Art</p>
+    <p>
+      <a href="https://highmaintenancedesigns.etsy.com" target="_blank" rel="noopener noreferrer">Etsy</a>
+    </p>
+  </footer>
 
 </body>
 </html>
