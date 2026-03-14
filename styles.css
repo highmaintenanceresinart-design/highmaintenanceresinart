@@ -265,3 +265,8 @@ main{padding:50px 0}
   :root{--pad:16px}
   .hero{padding:44px var(--pad)}
 }
+.logo {
+  height: 42px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
