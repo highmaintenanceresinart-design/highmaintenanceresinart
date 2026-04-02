@@ -3,63 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>High Maintenance Resin Art</title>
-  <meta name="description" content="One-of-one resin statement pieces, geode-inspired art, glam decor, and custom creations by High Maintenance Resin Art." />
+  <title>Gallery | High Maintenance Resin Art</title>
+  <meta name="description" content="Gallery of hand-poured resin artwork, crystal-inspired pieces, and one-of-one creations by High Maintenance Resin Art." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header class="site-header">
-    <h1>High Maintenance Resin Art</h1>
-    <p>One-of-one statement pieces</p>
+    <div class="container header-wrap">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <img src="logo.png" alt="High Maintenance Resin Art Logo" class="logo" />
+          <span>High Maintenance Resin Art</span>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="images.html">Gallery</a>
+        <a href="https://highmaintenandesigns.etsy.com" target="_blank" rel="noopener">Shop</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Luxury Resin Art Made to Stand Out</h2>
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">Gallery</p>
+      <h1>Resin Artwork Gallery</h1>
       <p>
-        Handcrafted resin trays, geode-inspired artwork, crystal details, glam décor,
-        and custom artified pieces designed to turn heads.
+        Tap any image to open it full-size. This gallery gives the site a cleaner,
+        more professional presentation and makes the artwork hit harder on mobile.
       </p>
-      <a href="https://highmaintenancedesigns.etsy.com" class="btn" target="_blank" rel="noopener noreferrer">
-        Shop on Etsy
-      </a>
-    </section>
+    </div>
+  </section>
 
-    <section class="about">
-      <h3>About the Brand</h3>
-      <p>
-        High Maintenance Resin Art creates bold, iridescent, luxury-inspired resin artwork
-        with glitter, crystals, depth, and one-of-one personality. Every piece is handcrafted
-        and designed to feel high-end, dramatic, and impossible to ignore.
-      </p>
-    </section>
+  <section class="section">
+    <div class="container gallery-grid">
+      <div class="gallery-item">
+        <img src="hero.png" alt="Featured resin art piece" onclick="openLightbox(this.src, this.alt)" />
+      </div>
 
-    <section class="about">
-      <h3>What You’ll Find</h3>
-      <p>
-        Signature geode pieces, trays, ashtrays, grinders, custom resin décor,
-        and glam functional art — including artified toolboxes and statement pieces
-        built around your color and style preferences.
-      </p>
-    </section>
+      <div class="gallery-item">
+        <img src="angle.jpg" alt="Angle view of resin artwork" onclick="openLightbox(this.src, this.alt)" />
+      </div>
 
-    <section class="about">
-      <h3>Custom Orders</h3>
+      <div class="gallery-item">
+        <img src="detail.jpg" alt="Detailed close-up of resin artwork" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="hero.png" alt="Resin artwork feature image" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="angle.jpg" alt="Resin artwork side angle" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="detail.jpg" alt="Resin texture detail image" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container cta-box">
+      <p class="eyebrow">Shop the Work</p>
+      <h2>Want to Buy or Ask About a Similar Piece?</h2>
       <p>
-        Looking for a custom piece? We offer personalized colors, crystal placement,
-        finish options, and display styles. The easiest way to shop current work is Etsy,
-        but custom requests can be built around your vision.
+        Visit the Etsy shop for available listings, or use the gallery as a visual reference
+        for the kind of custom work and design style offered.
       </p>
-    </section>
-  </main>
+      <div class="hero-buttons center-buttons">
+        <a class="btn btn-primary" href="https://highmaintenandesigns.etsy.com" target="_blank" rel="noopener">Shop Etsy</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+  </div>
 
   <footer class="site-footer">
-    <p>© 2026 High Maintenance Resin Art</p>
-    <p>
-      <a href="https://highmaintenancedesigns.etsy.com" target="_blank" rel="noopener noreferrer">Etsy</a>
-    </p>
+    <div class="container footer-wrap">
+      <div>
+        <strong>High Maintenance Resin Art</strong><br />
+        Handmade resin artwork from Virginia
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="images.html">Gallery</a>
+        <a href="https://highmaintenandesigns.etsy.com" target="_blank" rel="noopener">Shop</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    function openLightbox(src, alt) {
+      document.getElementById('lightbox').style.display = 'flex';
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-img').alt = alt;
+      document.getElementById('lightbox-caption').textContent = alt;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+      document.getElementById('lightbox-img').src = '';
+      document.getElementById('lightbox-caption').textContent = '';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
 
 </body>
 </html>
