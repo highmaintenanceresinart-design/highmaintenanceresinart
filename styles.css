@@ -525,186 +525,99 @@ a{
   gap:18px;
 }
 
-.gallery-item{
+.gallery-grid-large .gallery-item{
   overflow:hidden;
   border-radius:26px;
   box-shadow:0 18px 48px rgba(0,0,0,.12);
   background:#ddd;
   min-height:280px;
+  border:1px solid rgba(0,0,0,.08);
 }
 
-.gallery-item.large{
-  grid-column:span 6;
-}
-
-.gallery-item:not(.large){
-  grid-column:span 2;
-}
-
-.gallery-item img{
+.gallery-grid-large .gallery-item img{
   width:100%;
   height:100%;
   object-fit:cover;
-}
-
-.space-top{
-  margin-top:32px;
-}
-
-.center{
-  text-align:center;
-}
-
-.links-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.link-card{
   display:block;
-  padding:24px;
-  border-radius:24px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.10);
-  box-shadow:0 14px 30px rgba(0,0,0,.16);
 }
 
-.link-card h3{
-  margin:0 0 10px;
-  font-family:var(--heading);
-  font-size:24px;
-  color:#fff;
+.gallery-grid-large .gallery-item.large{
+  grid-column:span 6;
+  grid-row:span 2;
+  min-height:580px;
 }
 
-.link-card p{
-  margin:0;
-  color:var(--muted);
+.gallery-grid-large .gallery-item.wide{
+  grid-column:span 6;
+  min-height:280px;
 }
 
-.site-footer{
-  background:#09080e;
-  border-top:1px solid rgba(255,255,255,.08);
+.gallery-grid-large .gallery-item.tall{
+  grid-column:span 4;
+  grid-row:span 2;
+  min-height:580px;
 }
 
-.footer-inner{
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr;
-  gap:30px;
-  padding:58px var(--pad);
-}
-
-.footer-inner h3{
-  margin:0 0 14px;
-  font-family:var(--heading);
-}
-
-.footer-inner p,
-.footer-inner a{
-  color:rgba(255,255,255,.72);
-}
-
-.footer-links{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,.08);
-}
-
-.footer-bottom-inner{
-  min-height:64px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-}
-
-.footer-bottom p,
-.footer-bottom a{
-  margin:0;
-  color:rgba(255,255,255,.68);
+.gallery-grid-large .gallery-item:not(.large):not(.wide):not(.tall){
+  grid-column:span 3;
+  min-height:280px;
 }
 
 @media (max-width:1100px){
-  .hero-grid,
-  .artist-grid,
-  .custom-box,
-  .footer-inner{
-    grid-template-columns:1fr;
-  }
-
-  .featured-grid,
-  .links-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .gallery-item.large,
-  .gallery-item:not(.large){
+  .gallery-grid-large .gallery-item.large,
+  .gallery-grid-large .gallery-item.wide,
+  .gallery-grid-large .gallery-item.tall,
+  .gallery-grid-large .gallery-item:not(.large):not(.wide):not(.tall){
     grid-column:span 6;
+    grid-row:auto;
+    min-height:300px;
   }
 }
 
 @media (max-width:780px){
-  .header-inner{
-    flex-direction:column;
-    align-items:flex-start;
-    padding:16px 0;
-  }
-
-  .site-nav{
-    gap:14px;
-  }
-
-  .hero{
-    padding:70px 0 64px;
-  }
-
-  .hero h1{
-    font-size:46px;
-  }
-
-  .featured-grid,
-  .links-grid{
-    grid-template-columns:1fr;
-  }
-
-  .gallery-item.large,
-  .gallery-item:not(.large){
+  .gallery-grid-large .gallery-item.large,
+  .gallery-grid-large .gallery-item.wide,
+  .gallery-grid-large .gallery-item.tall,
+  .gallery-grid-large .gallery-item:not(.large):not(.wide):not(.tall){
     grid-column:span 12;
+    min-height:260px;
   }
+}<div class="gallery-item">
+  <img src="gallery-21.jpeg" alt="Pastel resin pour in progress with gold leaf accents">
+</div>
 
-  .footer-bottom-inner,
-  .topbar-inner{
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:center;
-    padding:10px 0;
-  }
-}
+<div class="gallery-item tall">
+  <img src="gallery-22.jpeg" alt="Broken bottle whiskey label wall art in resin frame">
+</div>
 
-@media (max-width:560px){
-  :root{ --pad:18px; }
+<div class="gallery-item">
+  <img src="gallery-23.jpeg" alt="Green dollar sign resin piece with embedded capsules and gold detail">
+</div>
 
-  .brand{
-    align-items:flex-start;
-  }
+<div class="gallery-item wide">
+  <img src="gallery-24.jpeg" alt="Neon green striped toolbox with dripping design">
+</div>
 
-  .brand-title{
-    font-size:18px;
-  }
+<div class="gallery-item">
+  <img src="gallery-25.jpeg" alt="Turquoise Kobalt organizer product promo graphic">
+</div>
 
-  .hero-buttons{
-    flex-direction:column;
-    align-items:stretch;
-  }
+<div class="gallery-item large">
+  <img src="gallery-26.jpeg" alt="Purple and gold High Maintenance Resin Art canvas promo image">
+</div>
 
-  .btn,
-  .header-shop-btn,
-  .mini-shop-btn{
-    width:100%;
-    text-align:center;
-  }
-}
+<div class="gallery-item large">
+  <img src="gallery-27.jpeg" alt="Silver crystal statement board branded High Maintenance Resin Art">
+</div>
+
+<div class="gallery-item">
+  <img src="gallery-28.jpeg" alt="Purple glitter resin toolbox organizer">
+</div>
+
+<div class="gallery-item">
+  <img src="gallery-29.jpeg" alt="Opal-style mushroom resin jar with iridescent finish">
+</div>
+
+<div class="gallery-item">
+  <img src="gallery-30.jpeg" alt="Silver round resin coaster with glitter pearls and crystal detail">
+</div>
