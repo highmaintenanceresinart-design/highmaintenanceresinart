@@ -621,3 +621,54 @@ a{
 <div class="gallery-item">
   <img src="gallery-30.jpeg" alt="Silver round resin coaster with glitter pearls and crystal detail">
 </div>
+.featured-products {
+  padding: 60px 20px;
+  text-align: center;
+  background: #0d0d0d;
+}
+
+.featured-products h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #c084fc, #f472b6);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
