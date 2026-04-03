@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | High Maintenance Resin Art</title>
+  <meta name="description" content="Gallery of hand-poured resin artwork, crystal-inspired pieces, and one-of-one creations by High Maintenance Resin Art." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <img src="logo.png" alt="High Maintenance Resin Art Logo" class="logo" />
+          <span>High Maintenance Resin Art</span>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="images.html">Gallery</a>
+        <a href="https://highmaintenandesigns.etsy.com" target="_blank" rel="noopener">Shop</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">Gallery</p>
+      <h1>Resin Artwork Gallery</h1>
+      <p>
+        Tap any image to open it full-size. This gallery gives the site a cleaner,
+        more professional presentation and makes the artwork hit harder on mobile.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container gallery-grid">
+      <div class="gallery-item">
+        <img src="hero.png" alt="Featured resin art piece" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="angle.jpg" alt="Angle view of resin artwork" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="detail.jpg" alt="Detailed close-up of resin artwork" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="hero.png" alt="Resin artwork feature image" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="angle.jpg" alt="Resin artwork side angle" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="detail.jpg" alt="Resin texture detail image" onclick="openLightbox(this.src, this.alt)" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container cta-box">
+      <p class="eyebrow">Shop the Work</p>
+      <h2>Want to Buy or Ask About a Similar Piece?</h2>
+      <p>
+        Visit the Etsy shop for available listings, or use the gallery as a visual reference
+        for the kind of custom work and design style offered.
+      </p>
+      <div class="hero-buttons center-buttons">
+        <a class="btn btn-primary" href="https://highmaintenandesigns.etsy.com" target="_blank" rel="noopener">Shop Etsy</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>High Maintenance Resin Art</strong><br />
+        Handmade resin artwork from Virginia
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="images.html">Gallery</a>
+        <a href="https://highmaintenandesigns.etsy.com" target="_blank" rel="noopener">Shop</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openLightbox(src, alt) {
+      document.getElementById('lightbox').style.display = 'flex';
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-img').alt = alt;
+      document.getElementById('lightbox-caption').textContent = alt;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+      document.getElementById('lightbox-img').src = '';
+      document.getElementById('lightbox-caption').textContent = '';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+
+</body>
+</html>
