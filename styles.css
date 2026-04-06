@@ -672,3 +672,31 @@ a{
   text-decoration: none;
   border-radius: 20px;
 }
+.artist-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
+}
+
+.artist-img{
+  width:100%;
+  max-width:320px;
+  border-radius:12px;
+  object-fit:cover;
+}
+
+@media (max-width:780px){
+  .artist-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}
